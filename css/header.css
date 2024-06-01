@@ -67,6 +67,10 @@ body {
 }
 
 @media (width < 940px) {
+  .header {
+    padding: 20px 20px;
+  }
+
   .header__menu {
     gap: 1em;
   }

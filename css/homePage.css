@@ -114,6 +114,10 @@
 }
 
 @media (width < 790px) {
+  .content-container__content {
+    padding: 10px;
+  }
+
   .hero-section__text-and-buttons {
     flex-basis: 100% !important;
 
