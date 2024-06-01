@@ -43,10 +43,13 @@ body {
 }
 
 .button {
+  display: flex;
+  width: fit-content;
   background: #a259ff;
   padding: 15px 30px;
   border-radius: 20px;
   border: none;
+  height: min-content;
 
   figcaption {
     color: #ffffff;
@@ -64,6 +67,11 @@ body {
   background-size: 100% 100%;
   border: none;
   width: 30px;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: 2px solid #a259ff;
 }
 
 @media (width < 940px) {

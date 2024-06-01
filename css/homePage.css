@@ -79,10 +79,6 @@ figcaption {
       margin: 0;
     }
 
-    #hero-section__button {
-      width: 190px;
-    }
-
     .additional-info {
       display: flex;
       justify-content: space-between;
@@ -159,6 +155,10 @@ figcaption {
   }
 }
 
+.top-rated-artists__cards-grid {
+  margin-top: 3em;
+}
+
 @media (width < 1070px) {
   .card-row__card {
     flex-basis: 50% !important;
@@ -201,5 +201,9 @@ figcaption {
 
   .card-row__card:nth-child(3) {
     display: none;
+  }
+
+  .transparent-button {
+    display: none !important;
   }
 }
