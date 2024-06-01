@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="https://cdn-icons-png.flaticon.com/512/6298/6298730.png"
@@ -22,13 +28,14 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/homePage.css" />
   </head>
   <body>
     <header class="header d-flex justify-content-center">
       <div class="header__container d-flex justify-content-between">
         <div class="header__title d-flex align-items-center">
           <figure class="d-flex align-items-center gap-3 m-0">
-            <img src="/img/headerAndFooterImg/Storefront.svg" alt="shop" />
+            <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
             <figcaption>NFT Marketplace</figcaption>
           </figure>
         </div>
@@ -43,8 +50,8 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             <a href="">Connect a wallet</a>
           </div>
           <div class="menu__item">
-            <button class="create-account-button d-flex gap-2">
-              <img src="/img/headerAndFooterImg/User.svg" alt="user" />
+            <button class="button d-flex gap-2">
+              <img src="/img/headerAndFooterImgs/User.svg" alt="user" />
               <figcaption>Sign Up</figcaption>
             </button>
           </div>
@@ -52,5 +59,67 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
         <button class="burger-menu"></button>
       </div>
     </header>
+
+    <div class="content-container">
+      <div class="content-container__content">
+        <div class="content__hero-section">
+          <div class="hero-section__text-and-buttons">
+            <h1>Discover digital art & Collect NFTs</h1>
+            <p>
+              NFT marketplace UI created with Anima for Figma. Collect, buy and
+              sell art from more than 20k NFT artists.
+            </p>
+            <div class="card" style="width: 18rem">
+              <img
+                src="/img/homePageImgs/Image Placeholder.png"
+                class="card-img-top"
+                alt="nft"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Space Walking</h4>
+                <figure class="d-flex gap-2">
+                  <img src="/img/homePageImgs/Avatar.png" alt="Ava" />
+                  <figcaption>Animakid</figcaption>
+                </figure>
+              </div>
+            </div>
+            <button id="hero-section__button" class="button d-flex gap-2">
+              <img src="/img/homePageImgs/RocketLaunch.png" alt="rocket" />
+              <figcaption>Get Started</figcaption>
+            </button>
+            <div class="additional-info">
+              <div class="additional-info__item">
+                <h3>240k+</h3>
+                <p>Total Sale</p>
+              </div>
+              <div class="additional-info__item">
+                <h3>240k+</h3>
+                <p>Total Sale</p>
+              </div>
+              <div class="additional-info__item">
+                <h3>240k+</h3>
+                <p>Total Sale</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-section__highlighted-nft">
+            <div class="card" style="width: 18rem">
+              <img
+                src="/img/homePageImgs/Image Placeholder.png"
+                class="card-img-top"
+                alt="nft"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Space Walking</h4>
+                <figure class="d-flex gap-2">
+                  <img src="/img/homePageImgs/Avatar.png" alt="Ava" />
+                  <figcaption>Animakid</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

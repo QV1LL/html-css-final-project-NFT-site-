@@ -1,0 +1,135 @@
+:root {
+  --safe-sone: 1280px;
+}
+
+.content-container {
+  display: grid;
+  place-items: center;
+}
+
+.content-container__content {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: clamp(374px, var(--safe-sone), 100%);
+}
+
+.content__hero-section {
+  display: flex;
+  gap: 8em;
+
+  .hero-section__text-and-buttons {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .card {
+      display: none;
+      width: 100%;
+      border-radius: 2em;
+      overflow: hidden;
+      background-color: #3b3b3b;
+    }
+
+    .card-body {
+      padding-top: 2em;
+      padding-left: 1.5em;
+
+      figcaption {
+        color: white;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 200;
+      }
+    }
+
+    .card-title {
+      color: white;
+      margin-bottom: 0.5em;
+    }
+
+    h1 {
+      font-family: Work Sans;
+      font-size: 67px;
+      font-weight: 600;
+      line-height: 73.7px;
+      text-align: left;
+      color: white;
+      margin: 0;
+    }
+
+    p {
+      color: white;
+      font-family: Work Sans;
+      font-size: 22px;
+      font-weight: 200;
+      margin: 0;
+    }
+
+    #hero-section__button {
+      width: 190px;
+    }
+
+    .additional-info {
+      display: flex;
+      justify-content: space-between;
+
+      .additional-info__item {
+        h3 {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .hero-section__highlighted-nft {
+    flex-basis: 50%;
+
+    .card {
+      width: 100% !important;
+      border-radius: 2em;
+      overflow: hidden;
+      background-color: #3b3b3b;
+    }
+
+    .card-body {
+      padding-top: 2em;
+      padding-left: 1.5em;
+
+      figcaption {
+        color: white;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 200;
+      }
+    }
+
+    .card-title {
+      color: white;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+@media (width < 790px) {
+  .hero-section__text-and-buttons {
+    flex-basis: 100% !important;
+
+    .card {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    #hero-section__button {
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .hero-section__highlighted-nft {
+    display: none;
+  }
+}
