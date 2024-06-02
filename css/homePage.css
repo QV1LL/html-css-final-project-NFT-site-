@@ -221,6 +221,11 @@ figcaption {
 
   .top-rated-artists__cards-grid {
     grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+
+  .top-rated-artists__cards-grid .card {
+    flex-direction: row;
   }
 }
 
@@ -246,6 +251,15 @@ figcaption {
 
   .hero-section__highlighted-nft {
     display: none;
+  }
+
+  .top-rated-artists__cards-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+
+    .card {
+      justify-content: flex-start;
+    }
   }
 }
 
