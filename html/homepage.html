@@ -60,6 +60,23 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       </div>
     </header>
 
+    <a href="#" id="top"></a>
+    <script>
+      upButton = document.getElementById("top");
+
+      function upButtonVisibility() {
+        hScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+        if (hScroll > 200) {
+          upButton.style.opacity = 1;
+        } else {
+          upButton.style.opacity = 0;
+        }
+      }
+
+      setInterval(upButtonVisibility, 200);
+    </script>
+
     <div class="content-container">
       <div class="content-container__content">
         <div class="content__hero-section">
@@ -405,6 +422,155 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
                   <p class="description">Total Sales:</p>
                   <p class="description text-white">34.53 ETH</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__browse-categories">
+          <h3>Browse Categories</h3>
+          <div class="browse-categories__cards-grid d-grid">
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 9.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/PaintBrush.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Art</h4>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 1.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/Swatches.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Collectibles</h4>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 3.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/MusicNotes.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Music</h4>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 4.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/Camera.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Photography</h4>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 5.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/VideoCamera.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Video</h4>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 6.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/MagicWand.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Utility</h4>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 7.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/Basketball.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Sport</h4>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem" href="">
+              <div>
+                <img
+                  src="/img/homePageImgs/backgroundImage 8.png"
+                  alt="bg-img"
+                  class="card-bg-img"
+                />
+                <img
+                  src="/img/homePageImgs/Planet.png"
+                  class="card-img-top"
+                  alt="top-img"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Virtual Worlds</h4>
               </div>
             </div>
           </div>
