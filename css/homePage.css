@@ -41,6 +41,11 @@ figcaption {
   margin: 0;
 }
 
+.adaptive-button {
+  margin-top: 3em;
+  display: none !important;
+}
+
 .content__hero-section {
   display: flex;
   gap: 8em;
@@ -237,6 +242,30 @@ figcaption {
   }
 }
 
+.discover-more-nfts__cards-grid {
+  display: grid;
+  margin-top: 3em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+
+  .card {
+    width: 100% !important;
+
+    .card-img-top {
+      height: 300px;
+    }
+  }
+
+  .description {
+    font-size: 1em;
+    color: #858584;
+  }
+
+  .text-white {
+    font-size: 1.5em;
+  }
+}
+
 @media (width < 1070px) {
   .card-row__card {
     flex-basis: 50% !important;
@@ -244,6 +273,14 @@ figcaption {
 
   .card-row__card:nth-child(2) {
     display: none;
+  }
+
+  .discover-more-nfts__cards-grid {
+    grid-template-columns: 1fr 1fr;
+
+    .card:nth-child(3) {
+      display: none;
+    }
   }
 
   .top-rated-artists__cards-grid .card:nth-child(n + 7) {
@@ -307,7 +344,26 @@ figcaption {
     display: none;
   }
 
-  .transparent-button {
+  .top-rated-artists__heading button {
     display: none !important;
+  }
+
+  .discover-more-nfts__cards-grid {
+    grid-template-columns: 1fr;
+
+    .card:nth-child(3) {
+      display: block;
+    }
+
+    .card {
+      .card-img-top {
+        height: auto;
+      }
+    }
+  }
+
+  .adaptive-button {
+    display: block !important;
+    width: 100%;
   }
 }
