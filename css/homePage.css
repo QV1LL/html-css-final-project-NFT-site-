@@ -363,7 +363,8 @@ figcaption {
   }
 
   .adaptive-button {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
     width: 100%;
   }
 }
