@@ -306,6 +306,39 @@ figcaption {
   width: 75%;
 }
 
+.content__subscribe-widget {
+  background-color: #3b3b3b;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.content__subscribe-widget .subscribe-widget__img {
+  flex: 1 0 50%;
+  overflow: hidden;
+}
+.content__subscribe-widget .subscribe-widget__img img {
+  width: 100%;
+}
+.content__subscribe-widget .subscribe-widget__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.content__subscribe-widget .subscribe-widget__heading .heading__input-field {
+  display: flex;
+}
+.content__subscribe-widget .subscribe-widget__heading .heading__input-field .input-field__input {
+  border-radius: 1em 0 0 1em;
+  border: none;
+  padding-left: 1em;
+  width: 60%;
+}
+.content__subscribe-widget .subscribe-widget__heading .heading__input-field .button {
+  position: relative;
+  transform: translate(-10%, 0);
+}
+
 @media (width < 1070px) {
   .card-row__card {
     flex-basis: 50% !important;
@@ -328,6 +361,21 @@ figcaption {
   }
   .top-rated-artists__cards-grid .card {
     flex-direction: row;
+  }
+  .heading__input-field {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .heading__input-field .input-field__input {
+    border-radius: 1em !important;
+    border: none;
+    padding: 1em;
+    width: 100% !important;
+  }
+  .heading__input-field .button {
+    transform: none !important;
+    width: 100%;
+    justify-content: center;
   }
 }
 @media (width < 790px) {
@@ -382,6 +430,10 @@ figcaption {
   .how-it-works__cards .card {
     flex-direction: row;
     text-align: left !important;
+  }
+  .content__subscribe-widget {
+    flex-direction: column;
+    background-color: transparent;
   }
 }
 @media (width < 630px) {

@@ -355,6 +355,45 @@ figcaption {
   }
 }
 
+.content__subscribe-widget {
+  background-color: #3b3b3b;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+
+  .subscribe-widget__img {
+    flex: 1 0 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .subscribe-widget__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .heading__input-field {
+      display: flex;
+
+      .input-field__input {
+        border-radius: 1em 0 0 1em;
+        border: none;
+        padding-left: 1em;
+        width: 60%;
+      }
+
+      .button {
+        position: relative;
+        transform: translate(-10%, 0);
+      }
+    }
+  }
+}
+
 @media (width < 1070px) {
   .card-row__card {
     flex-basis: 50% !important;
@@ -383,6 +422,24 @@ figcaption {
 
   .top-rated-artists__cards-grid .card {
     flex-direction: row;
+  }
+
+  .heading__input-field {
+    flex-direction: column;
+    gap: 1em;
+
+    .input-field__input {
+      border-radius: 1em !important;
+      border: none;
+      padding: 1em;
+      width: 100% !important;
+    }
+
+    .button {
+      transform: none !important;
+      width: 100%;
+      justify-content: center;
+    }
   }
 }
 
@@ -452,6 +509,11 @@ figcaption {
       flex-direction: row;
       text-align: left !important;
     }
+  }
+
+  .content__subscribe-widget {
+    flex-direction: column;
+    background-color: transparent;
   }
 }
 
