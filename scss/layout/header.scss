@@ -1,3 +1,5 @@
+@use "../utils/variables.scss" as variables;
+
 body {
   background-color: #2b2b2b !important;
   scroll-behavior: smooth;
@@ -37,9 +39,10 @@ body {
   background: #2b2b2b;
   border: 2px groove #3b3b3b;
   border-radius: 7px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #1b1b1b;
+
+  &:hover {
+    background-color: #1b1b1b;
+  }
 }
 
 [href]:hover {
@@ -55,7 +58,7 @@ body {
 }
 
 .header__container {
-  width: 1280px;
+  width: variables.$safe-sone;
   height: 100%;
 }
 
@@ -90,19 +93,20 @@ body {
   border-radius: 20px;
   border: none;
   height: min-content;
-}
-.button figcaption {
-  color: #ffffff;
-  font-family: Work Sans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22.4px;
-  text-align: center;
+
+  figcaption {
+    color: #ffffff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: center;
+  }
 }
 
 .burger-menu {
   display: none;
-  background: url("../img/headerAndFooterImgs/navMenu.svg");
+  background: url(/img/headerAndFooterImgs/navMenu.svg);
   background-size: 100% 100%;
   border: none;
   width: 30px;
@@ -117,22 +121,24 @@ body {
   .header {
     padding: 20px 20px;
   }
+
   .header__menu {
     gap: 1em;
   }
 }
+
 @media (width < 834px) {
   .burger-menu {
     display: block;
   }
+
   .header__menu {
     display: none;
   }
 }
+
 @media (width < 420px) {
   .header__title figcaption {
     font-size: 16px;
   }
 }
-
-/*# sourceMappingURL=header.css.map */

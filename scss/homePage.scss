@@ -1,4 +1,6 @@
-$safe-sone: 1280px;
+@use "./layout/footer.scss";
+@use "./layout/header.scss";
+@use "./utils/variables.scss" as variables;
 
 .content-container {
   display: grid;
@@ -10,7 +12,7 @@ $safe-sone: 1280px;
   display: flex;
   flex-direction: column;
   gap: 200px;
-  width: clamp(374px, $safe-sone, 100%);
+  width: clamp(374px, variables.$safe-sone, 100%);
 }
 
 h3 {

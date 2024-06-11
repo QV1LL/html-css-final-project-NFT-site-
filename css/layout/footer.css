@@ -1,0 +1,13 @@
+.footer {
+  background-color: #3b3b3b;
+  display: grid;
+  place-items: center;
+}
+.footer .footer__container {
+  width: clamp(10%, 1280px, 100%);
+  height: 100%;
+  padding: 2em;
+  gap: 5em;
+}
+
+/*# sourceMappingURL=footer.css.map */
