@@ -1,5 +1,5 @@
-@use "./layout/footer.scss";
-@use "./layout/header.scss";
+@use "./layout/layout-load-up";
+@use "./components/cmp-load-up";
 @use "./utils/variables.scss" as variables;
 
 .content-container {
@@ -377,22 +377,6 @@ figcaption {
     display: flex;
     flex-direction: column;
     gap: 1em;
-
-    .heading__input-field {
-      display: flex;
-
-      .input-field__input {
-        border-radius: 1em 0 0 1em;
-        border: none;
-        padding-left: 1em;
-        width: 60%;
-      }
-
-      .button {
-        position: relative;
-        transform: translate(-10%, 0);
-      }
-    }
   }
 }
 
@@ -426,21 +410,23 @@ figcaption {
     flex-direction: row;
   }
 
-  .heading__input-field {
-    flex-direction: column;
-    gap: 1em;
+  .content__subscribe-widget {
+    .heading__input-field {
+      flex-direction: column;
+      gap: 1em;
 
-    .input-field__input {
-      border-radius: 1em !important;
-      border: none;
-      padding: 1em;
-      width: 100% !important;
-    }
+      .input-field__input {
+        border-radius: 1em !important;
+        border: none;
+        padding: 1em;
+        width: 100% !important;
+      }
 
-    .button {
-      transform: none !important;
-      width: 100%;
-      justify-content: center;
+      .button {
+        transform: none !important;
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
 }
