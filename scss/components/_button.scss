@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  width: fit-content;
+  background: #a259ff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  height: min-content;
+
+  figcaption {
+    color: #ffffff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: center;
+  }
+}
