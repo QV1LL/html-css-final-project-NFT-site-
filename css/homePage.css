@@ -1,3 +1,23 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+  font-size: 38px;
+}
+
+h5 {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
 .footer {
   background-color: #3b3b3b;
   display: grid;
@@ -119,35 +139,12 @@ body {
   color: #ffffff;
 }
 
-.button {
-  display: flex;
-  width: fit-content;
-  background: #a259ff;
-  padding: 15px 30px;
-  border-radius: 20px;
-  border: none;
-  height: min-content;
-}
-.button figcaption {
-  color: #ffffff;
-  font-family: Work Sans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22.4px;
-  text-align: center;
-}
-
 .burger-menu {
   display: none;
   background: url(/img/headerAndFooterImgs/navMenu.svg);
   background-size: 100% 100%;
   border: none;
   width: 30px;
-}
-
-.transparent-button {
-  background-color: transparent;
-  border: 2px solid #a259ff;
 }
 
 @media (width < 940px) {
@@ -185,6 +182,42 @@ body {
   transform: translate(-10%, 0);
 }
 
+.description {
+  color: white;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.adaptive-button {
+  margin-top: 3em;
+  display: none !important;
+}
+
+.button {
+  display: flex;
+  width: fit-content;
+  background: #a259ff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  height: min-content;
+}
+.button figcaption {
+  color: #ffffff;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  text-align: center;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: 2px solid #a259ff;
+}
+
 .content-container {
   display: grid;
   place-items: center;
@@ -214,19 +247,6 @@ figcaption {
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 200;
-}
-
-.description {
-  color: white;
-  font-family: Work Sans;
-  font-size: 22px;
-  font-weight: 200;
-  margin: 0;
-}
-
-.adaptive-button {
-  margin-top: 3em;
-  display: none !important;
 }
 
 .content__hero-section {

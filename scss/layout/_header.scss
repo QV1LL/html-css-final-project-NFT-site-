@@ -1,7 +1,7 @@
-@use "../utils/variables.scss" as variables;
+@use "../utils/variables.scss" as *;
 
 body {
-  background-color: #2b2b2b !important;
+  background-color: $background !important;
   scroll-behavior: smooth;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .header {
-  background: #2b2b2b;
+  background: $background;
   padding: 20px 50px 20px 50px;
   position: sticky;
   top: 0;
@@ -58,7 +58,7 @@ body {
 }
 
 .header__container {
-  width: variables.$safe-sone;
+  width: $safe-sone;
   height: 100%;
 }
 
