@@ -5,28 +5,6 @@ body {
   scroll-behavior: smooth;
 }
 
-#top {
-  position: fixed;
-  transition-duration: 0.5s;
-  z-index: 100;
-  bottom: 2%;
-  right: 2%;
-  place-self: end;
-  text-decoration: none;
-  padding: 3vh;
-  font-family: sans-serif;
-  color: #fff;
-  background: #000;
-  border-radius: 0.5vw;
-  overflow: hidden;
-  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png);
-  background-size: 60%;
-  box-shadow: 0 0.5vw 1.5vw 0.5vw #1b1b1b;
-  background-repeat: no-repeat;
-  background-position: center;
-  white-space: nowrap;
-}
-
 ::-webkit-scrollbar {
   background-color: #3b3b3b;
 }

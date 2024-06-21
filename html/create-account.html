@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Connect Wallet</title>
+    <title>Create account</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -25,17 +25,20 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/connectWallet.css" />
+    <link rel="stylesheet" href="../css/create-account.css" />
   </head>
   <body>
     <header class="header d-flex justify-content-center">
       <div class="header__container d-flex justify-content-between">
-        <div class="header__title d-flex align-items-center">
+        <a
+          class="header__title d-flex align-items-center"
+          href="./home-page.html"
+        >
           <figure class="d-flex align-items-center gap-3 m-0">
             <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
             <figcaption>NFT Marketplace</figcaption>
           </figure>
-        </div>
+        </a>
         <menu class="header__menu">
           <div class="menu__item">
             <a href="">Marketplace</a>
@@ -44,14 +47,14 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             <a href="">Rankings</a>
           </div>
           <div class="menu__item">
-            <a href="./connectWallet.html">Connect a wallet</a>
+            <a href="./connect-wallet.html">Connect a wallet</a>
           </div>
-          <div class="menu__item">
+          <a class="menu__item" href="./create-account.html">
             <button class="button gap-2">
               <img src="/img/headerAndFooterImgs/User.svg" alt="user" />
               <figcaption>Sign Up</figcaption>
             </button>
-          </div>
+          </a>
         </menu>
         <button class="burger-menu"></button>
       </div>
@@ -66,33 +69,65 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
         >
           <img
             class="connect-wallet-section__image"
-            src="/img/connectWalletImgs/Image Placeholder.png"
+            src="/img/createAccoundImgs/Image Placeholder.png"
             alt="image placeholder"
           />
-          <div class="connect-wallet-section__heading">
-            <h2>Connect wallet</h2>
+          <form class="connect-wallet-section__form">
+            <h2>Create account</h2>
             <p class="description">
-              Choose a wallet you want to connect. There are several wallet
-              providers.
+              Welcome! enter your details and start creating, collecting and
+              selling NFTs.
             </p>
-            <button class="button">
-              <img src="/img/connectWalletImgs/Metamask.png" alt="metamask" />
-              <figcaption>Metamask</figcaption>
-            </button>
-
-            <button class="button">
-              <img
-                src="/img/connectWalletImgs/WalletConnect.png"
-                alt="wallet connect"
+            <div class="input-field">
+              <img src="../img/createAccoundImgs/User.svg" alt="ico" />
+              <input
+                type="text"
+                name="username"
+                id=""
+                class="input-field__input"
+                placeholder="Username"
               />
-              <figcaption>Wallet Connect</figcaption>
-            </button>
+            </div>
 
-            <button class="button">
-              <img src="/img/connectWalletImgs/Coinbase.png" alt="coinbase" />
-              <figcaption>Coinbase</figcaption>
+            <div class="input-field">
+              <img
+                src="../img/createAccoundImgs/EnvelopeSimple.svg"
+                alt="ico"
+              />
+              <input
+                type="email"
+                name="email"
+                id=""
+                class="input-field__input"
+                placeholder="Email address"
+              />
+            </div>
+
+            <div class="input-field">
+              <img src="../img/createAccoundImgs/LockKey.svg" alt="ico" />
+              <input
+                type="password"
+                name="password"
+                id=""
+                class="input-field__input"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="input-field">
+              <img src="../img/createAccoundImgs/LockKey.svg" alt="ico" />
+              <input
+                type="password"
+                name="confirm-password"
+                id=""
+                class="input-field__input"
+                placeholder="Confirm password"
+              />
+            </div>
+            <button type="submit" class="button justify-content-center">
+              <figcaption>Create account</figcaption>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -129,7 +164,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
           <p class="description">Marketplace</p>
           <p class="description">Rankings</p>
           <p class="description">
-            <a href="./connectWallet.html">Connect a wallet</a>
+            <a href="./connect-wallet.html">Connect a wallet</a>
           </p>
         </div>
         <div class="container__group d-flex flex-column">
@@ -137,7 +172,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
           <p class="description">
             Get exclusive promotions & updates straight to your inbox.
           </p>
-          <div class="heading__input-field">
+          <div class="input-field">
             <input
               class="input-field__input"
               type="text"

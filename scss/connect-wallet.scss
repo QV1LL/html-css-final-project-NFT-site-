@@ -1,5 +1,5 @@
-@use "./layout/layout-load-up";
-@use "./components/cmp-load-up";
+@use "./layout";
+@use "./components";
 @use "./utils/variables.scss" as variables;
 
 .content-container {
@@ -49,7 +49,7 @@
   }
 }
 
-@media (width < 950px) {
+@media (width < 940px) {
   .content__connect-wallet-section {
     flex-direction: column;
   }

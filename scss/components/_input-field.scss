@@ -1,11 +1,14 @@
-.heading__input-field {
+@use "../utils/variables" as *;
+
+.input-field {
   display: flex;
 
-  .input-field__input {
+  &__input {
     border-radius: 1em 0 0 1em;
     border: none;
     padding-left: 1em;
-    width: clamp(100px, 60%, 400px);
+    width: clamp(100px, $input-field-width, 400px);
+    outline: none;
   }
 
   .button {

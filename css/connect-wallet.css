@@ -60,28 +60,6 @@ body {
   scroll-behavior: smooth;
 }
 
-#top {
-  position: fixed;
-  transition-duration: 0.5s;
-  z-index: 100;
-  bottom: 2%;
-  right: 2%;
-  place-self: end;
-  text-decoration: none;
-  padding: 3vh;
-  font-family: sans-serif;
-  color: #fff;
-  background: #000;
-  border-radius: 0.5vw;
-  overflow: hidden;
-  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png);
-  background-size: 60%;
-  box-shadow: 0 0.5vw 1.5vw 0.5vw #1b1b1b;
-  background-repeat: no-repeat;
-  background-position: center;
-  white-space: nowrap;
-}
-
 ::-webkit-scrollbar {
   background-color: #3b3b3b;
 }
@@ -168,16 +146,17 @@ body {
     font-size: 16px;
   }
 }
-.heading__input-field {
+.input-field {
   display: flex;
 }
-.heading__input-field .input-field__input {
+.input-field__input {
   border-radius: 1em 0 0 1em;
   border: none;
   padding-left: 1em;
   width: clamp(100px, 60%, 400px);
+  outline: none;
 }
-.heading__input-field .button {
+.input-field .button {
   position: relative;
   transform: translate(-10%, 0);
 }
@@ -216,6 +195,29 @@ body {
 .transparent-button {
   background-color: transparent;
   border: 2px solid #a259ff;
+}
+
+#top {
+  position: fixed;
+  transition-duration: 0.5s;
+  z-index: 100;
+  bottom: 2%;
+  right: 2%;
+  place-self: end;
+  text-decoration: none;
+  padding: 3vh;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 0.5vw;
+  overflow: hidden;
+  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png);
+  background-size: 60%;
+  box-shadow: 0 0.5vw 1.5vw 0.5vw #1b1b1b;
+  background-repeat: no-repeat;
+  background-position: center;
+  white-space: nowrap;
+  opacity: 0;
 }
 
 .content-container {
@@ -257,10 +259,10 @@ body {
     width: 100% !important;
   }
 }
-@media (width < 950px) {
+@media (width < 940px) {
   .content__connect-wallet-section {
     flex-direction: column;
   }
 }
 
-/*# sourceMappingURL=connectWallet.css.map */
+/*# sourceMappingURL=connect-wallet.css.map */

@@ -27,17 +27,20 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/homePage.css" />
+    <link rel="stylesheet" href="../css/home-page.css" />
   </head>
   <body>
     <header class="header d-flex justify-content-center">
       <div class="header__container d-flex justify-content-between">
-        <div class="header__title d-flex align-items-center">
+        <a
+          class="header__title d-flex align-items-center"
+          href="./home-page.html"
+        >
           <figure class="d-flex align-items-center gap-3 m-0">
             <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
             <figcaption>NFT Marketplace</figcaption>
           </figure>
-        </div>
+        </a>
         <menu class="header__menu">
           <div class="menu__item">
             <a href="">Marketplace</a>
@@ -46,14 +49,14 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             <a href="">Rankings</a>
           </div>
           <div class="menu__item">
-            <a href="./connectWallet.html">Connect a wallet</a>
+            <a href="./connect-wallet.html">Connect a wallet</a>
           </div>
-          <div class="menu__item">
+          <a class="menu__item" href="./create-account.html">
             <button class="button gap-2">
               <img src="/img/headerAndFooterImgs/User.svg" alt="user" />
               <figcaption>Sign Up</figcaption>
             </button>
-          </div>
+          </a>
         </menu>
         <button class="burger-menu"></button>
       </div>
@@ -63,7 +66,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
 
     <div class="content-container">
       <div class="content-container__content">
-        <div class="content__hero-section">
+        <section class="content__hero-section">
           <div class="hero-section__text-and-buttons">
             <h1>Discover digital art & Collect NFTs</h1>
             <p class="description">
@@ -84,10 +87,12 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
                 </figure>
               </div>
             </div>
-            <button id="hero-section__button" class="button gap-2">
-              <img src="/img/homePageImgs/RocketLaunch.png" alt="rocket" />
-              <figcaption>Get Started</figcaption>
-            </button>
+            <a href="./create-account.html">
+              <button id="hero-section__button" class="button gap-2">
+                <img src="/img/homePageImgs/RocketLaunch.png" alt="rocket" />
+                <figcaption>Get Started</figcaption>
+              </button>
+            </a>
             <div class="additional-info">
               <div class="additional-info__item">
                 <h3>240k+</h3>
@@ -119,9 +124,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="content__trending-colection">
+        <section class="content__trending-colection">
           <h3>Trending Collection</h3>
           <p class="description">
             Checkout our weekly updated trending collection.
@@ -211,9 +216,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
               </figure>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="content__top-rated-artists">
+        <section class="content__top-rated-artists">
           <div
             class="top-rated-artists__heading d-flex justify-content-between align-items-end"
           >
@@ -415,9 +420,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             <img src="/img/homePageImgs/RocketLaunchPurple.png" alt="user" />
             <figcaption>View Rankings</figcaption>
           </button>
-        </div>
+        </section>
 
-        <div class="content__browse-categories">
+        <section class="content__browse-categories">
           <h3>Browse Categories</h3>
           <div class="browse-categories__cards-grid d-grid">
             <div class="card" style="width: 18rem" href="">
@@ -564,9 +569,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="content__discover-more-nfts">
+        <section class="content__discover-more-nfts">
           <div
             class="top-rated-artists__heading d-flex justify-content-between align-items-end"
           >
@@ -661,9 +666,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             <img src="/img/homePageImgs/Eye.svg" alt="user" />
             <figcaption>See all</figcaption>
           </button>
-        </div>
+        </section>
 
-        <div class="content__nft-highlight">
+        <section class="content__nft-highlight">
           <div class="nft-highlight__headline">
             <figure class="d-flex gap-2">
               <img src="/img/homePageImgs/avatar 4.png" alt="Ava" />
@@ -705,9 +710,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
               <p>Seconds</p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="content__how-it-works">
+        <section class="content__how-it-works">
           <div class="how-it-works__heading">
             <div>
               <h3>How it works</h3>
@@ -760,9 +765,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="content__subscribe-widget">
+        <section class="content__subscribe-widget">
           <div class="subscribe-widget__img">
             <img src="/img/homePageImgs/Photo.png" alt="image" />
           </div>
@@ -771,7 +776,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             <p class="description mb-5">
               Get exclusive promotions & updates straight to your inbox.
             </p>
-            <div class="heading__input-field">
+            <div class="input-field">
               <input
                 class="input-field__input"
                 type="text"
@@ -783,7 +788,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
               </button>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
 
@@ -819,7 +824,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
           <p class="description">Marketplace</p>
           <p class="description">Rankings</p>
           <p class="description">
-            <a href="./connectWallet.html">Connect a wallet</a>
+            <a href="./connect-wallet.html">Connect a wallet</a>
           </p>
         </div>
         <div class="container__group d-flex flex-column">
@@ -827,7 +832,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
           <p class="description">
             Get exclusive promotions & updates straight to your inbox.
           </p>
-          <div class="heading__input-field">
+          <div class="input-field">
             <input
               class="input-field__input"
               type="text"
@@ -845,6 +850,6 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
         <p class="description">Ⓒ NFT Market. Use this template freely.</p>
       </div>
     </footer>
-    <script src="js/upButton.js"></script>
+    <script src="/js/upButton.js"></script>
   </body>
 </html>

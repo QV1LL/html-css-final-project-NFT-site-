@@ -1,5 +1,5 @@
-@use "./layout/layout-load-up";
-@use "./components/cmp-load-up";
+@use "./layout";
+@use "./components";
 @use "./utils/variables.scss" as *;
 
 .content-container {
