@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/6298/6298730.png"
+      type="image/x-icon"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/artist-page.css" />
+  </head>
+  <body>
+    <header class="header d-flex justify-content-center">
+      <div class="header__container d-flex justify-content-between">
+        <a
+          class="header__title d-flex align-items-center"
+          href="./home-page.html"
+        >
+          <figure class="d-flex align-items-center gap-3 m-0">
+            <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
+            <figcaption>NFT Marketplace</figcaption>
+          </figure>
+        </a>
+        <menu class="header__menu">
+          <div class="menu__item">
+            <a href="">Marketplace</a>
+          </div>
+          <div class="menu__item">
+            <a href="">Rankings</a>
+          </div>
+          <div class="menu__item">
+            <a href="./connect-wallet.html">Connect a wallet</a>
+          </div>
+          <a class="menu__item" href="./create-account.html">
+            <button class="button gap-2">
+              <img src="/img/headerAndFooterImgs/User.svg" alt="user" />
+              <figcaption>Sign Up</figcaption>
+            </button>
+          </a>
+        </menu>
+        <button class="burger-menu"></button>
+      </div>
+    </header>
+
+    <a href="#" id="top"></a>
+
+    <div class="background-image">
+      <img
+        class="background-image__image"
+        src="/img/artistPageImgs/Image PlaceHolder.png"
+        alt="Image PlaceHolder"
+      />
+    </div>
+
+    <div class="content-container">
+      <div class="content-container__artist-info">
+        <img
+          src="/img/artistPageImgs/Avatar Placeholder.png"
+          alt="avatar"
+          class="artist-info__img"
+        />
+        <div class="artist-info__heading">
+          <h1>Animakid</h1>
+          <div class="d-flex gap-4">
+            <button class="button gap-2">
+              <img src="/img/artistPageImgs/Copy.svg" alt="copy" />
+              <figcaption>0xc0E3...B79C</figcaption>
+            </button>
+            <button class="button gap-2 transparent-button">
+              <img src="/img/artistPageImgs/Plus.svg" alt="plus" />
+              <figcaption>Follow</figcaption>
+            </button>
+          </div>
+        </div>
+        <div class="additional-info">
+          <div class="additional-info__item">
+            <h3>250k+</h3>
+            <p class="description">Volume</p>
+          </div>
+          <div class="additional-info__item">
+            <h3>50+</h3>
+            <p class="description">NFTs Sold</p>
+          </div>
+          <div class="additional-info__item">
+            <h3>3000+</h3>
+            <p class="description">Followers</p>
+          </div>
+        </div>
+        <div>
+          <h4>Bio</h4>
+          <p class="description">The internet's friendliest designer kid.</p>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <div class="d-flex gap-1">
+            <img src="/img/artistPageImgs/Globe.svg" alt="globe" />
+            <img src="/img/artistPageImgs/DiscordLogo.svg" alt="discord" />
+            <img src="/img/artistPageImgs/YoutubeLogo.svg" alt="YT" />
+            <img src="/img/artistPageImgs/TwitterLogo.svg" alt="twitter" />
+            <img src="/img/artistPageImgs/InstagramLogo.svg" alt="instagram" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="content-container">
+      <div class="content-container__content d-flex justify-content-between">
+        <h4 data-count="302" data-active="" class="content__item">Created</h4>
+        <h4 data-count="67" class="content__item">owned</h4>
+        <h4 data-count="4" class="content__item">Collection</h4>
+      </div>
+    </div>
+
+    <div class="content-container" data-background="">
+      <div class="content-container__content">
+        <div class="content__cards-grid">
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg9.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">Distant Galaxy</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg1.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">Life on Edena</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg2.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">AstroFiction</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg3.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">CryptoCity</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg4.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">ColorfulDog 0524</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg5.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">Space Tales</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg6.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">Cherry Blossom Girl 037</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg7.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">Dancing Robots 0987</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem" href="">
+            <img
+              src="/img/artistPageImgs/cardImg8.png"
+              class="card-img-top"
+              alt="nft"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-white">IceCream Ape</h4>
+              <figure class="d-flex gap-2">
+                <img src="/img/artistPageImgs/Avatar.png" alt="Ava" />
+                <figcaption>Animakid</figcaption>
+              </figure>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="description">Price</p>
+                  <p class="description text-white">1.63 ETH</p>
+                </div>
+                <div>
+                  <p class="description">Highest Bid</p>
+                  <p class="description text-white">0.33 wETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container d-flex justify-content-between">
+        <div class="container__group d-flex flex-column">
+          <figure class="d-flex align-items-center gap-3 m-0">
+            <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
+            <h5>NFT Marketplace</h5>
+          </figure>
+          <p class="description">
+            NFT marketplace UI created with Anima for Figma.
+          </p>
+          <p class="description">Join our community</p>
+          <div class="group__imgs d-flex gap-2">
+            <img
+              src="/img/headerAndFooterImgs/DiscordLogo.svg"
+              alt="discord"
+            /><img
+              src="/img/headerAndFooterImgs/YoutubeLogo.svg"
+              alt="yt"
+            /><img
+              src="/img/headerAndFooterImgs/TwitterLogo.svg"
+              alt="twitter"
+            /><img
+              src="/img/headerAndFooterImgs/InstagramLogo.svg"
+              alt="instagramm"
+            />
+          </div>
+        </div>
+        <div class="container__group d-flex flex-column">
+          <h5>Explore</h5>
+          <p class="description">Marketplace</p>
+          <p class="description">Rankings</p>
+          <p class="description">
+            <a href="./connect-wallet.html">Connect a wallet</a>
+          </p>
+        </div>
+        <div class="container__group d-flex flex-column">
+          <h5>Join our weekly digest</h5>
+          <p class="description">
+            Get exclusive promotions & updates straight to your inbox.
+          </p>
+          <div class="input-field">
+            <input
+              class="input-field__input"
+              type="text"
+              placeholder="Enter your email here"
+            />
+            <button class="button gap-2">
+              <img src="/img/homePageImgs/EnvelopeSimple.svg" alt="rocket" />
+              <figcaption>Subscribe</figcaption>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__container">
+        <hr class="container__hr" />
+        <p class="description">Ⓒ NFT Market. Use this template freely.</p>
+      </div>
+    </footer>
+    <script src="/js/upButton.js"></script>
+  </body>
+</html>

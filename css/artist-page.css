@@ -243,51 +243,112 @@ h5 {
   justify-content: space-between;
 }
 
+.background-image__image {
+  width: 100%;
+}
+
 .content-container {
   display: grid;
   place-items: center;
 }
-
+.content-container[data-background] {
+  background-color: #3b3b3b;
+  margin-bottom: 0.3em;
+}
 .content-container__content {
-  display: flex;
-  justify-content: space-evenly;
   width: clamp(374px, 1280px, 100%);
+  flex-wrap: wrap;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__image {
-  width: clamp(300px, 100%, 950px);
+.content-container__content .content__cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 5em 0;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form {
+.content-container__content .content__cards-grid .card {
+  background-color: #2b2b2b;
+  width: 100% !important;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.content-container__content .content__cards-grid .card .card-img-top {
+  height: 300px;
+}
+.content-container__content .content__cards-grid .description {
+  font-size: 1em;
+  color: #858584;
+}
+.content-container__content .content__cards-grid .text-white {
+  font-size: 1.5em;
+}
+.content-container__content .content__cards-grid figure figcaption {
+  color: white;
+}
+.content-container__content .content__item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 1em;
+}
+.content-container__content .content__item::after {
+  content: attr(data-count);
+  color: white;
+  padding: 0.3em 0.5em;
+  background-color: #3b3b3b;
+  border-radius: 50%;
+  margin-left: 1em;
+}
+.content-container__content .content__item[data-active] {
+  color: lightgray;
+  border-bottom: 4px solid #858584;
+}
+.content-container__content .content__item[data-active]::after {
+  background-color: #767676;
+}
+.content-container__artist-info {
+  width: clamp(374px, 1280px, 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1em;
-  padding: 3em;
+  gap: 2em;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form h2 {
-  font-size: 60px;
+.content-container__artist-info .artist-info__img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #2b2b2b;
+  overflow: hidden;
+  border-radius: 2em;
+  position: relative;
+  transform: translate(0, -60px);
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form .input-field {
-  border-radius: 1.5em;
-  background-color: white;
-  padding: 0.7em 2em;
-  width: 80%;
+.content-container__artist-info .artist-info__heading {
+  display: flex;
+  justify-content: space-between;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form .input-field__input {
-  font-size: 1.2em;
-}
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form .button {
-  margin-top: 1em;
-  width: 80%;
+.content-container__artist-info .additional-info {
+  width: 50%;
 }
 
-@media (width < 940px) {
-  .content-container__content .content__connect-wallet-section {
+@media (width < 834px) {
+  .content-container__content .content__cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-container__content .content__cards-grid .card:nth-child(n+7) {
+    display: none;
+  }
+  .artist-info__heading {
     flex-direction: column;
+    gap: 2em;
   }
-  .content-container__content .content__connect-wallet-section .connect-wallet-section__form .input-field,
-  .content-container__content .content__connect-wallet-section .connect-wallet-section__form .button {
-    width: 100%;
+}
+@media (width < 630px) {
+  .content-container__content .content__cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-container__content .content__cards-grid .card:nth-child(n+4) {
+    display: none;
+  }
+  .content__item::after {
+    display: none;
   }
 }
 
-/*# sourceMappingURL=create-account.css.map */
+/*# sourceMappingURL=artist-page.css.map */

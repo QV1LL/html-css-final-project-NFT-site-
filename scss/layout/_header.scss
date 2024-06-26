@@ -71,7 +71,7 @@ body {
   width: 30px;
 }
 
-@media (width < 940px) {
+@media (width < $media-l) {
   .header {
     padding: 20px 20px;
   }
@@ -81,7 +81,7 @@ body {
   }
 }
 
-@media (width < 834px) {
+@media (width < $media-xm) {
   .burger-menu {
     display: block;
   }
@@ -91,7 +91,7 @@ body {
   }
 }
 
-@media (width < 420px) {
+@media (width < $media-s) {
   .header__title figcaption {
     font-size: 16px;
   }

@@ -60,21 +60,6 @@ figcaption {
       color: white;
       margin-bottom: 0.5em;
     }
-
-    h1 {
-      font-family: Work Sans;
-      font-size: 67px;
-      font-weight: 600;
-      line-height: 73.7px;
-      text-align: left;
-      color: white;
-      margin: 0;
-    }
-
-    .additional-info {
-      display: flex;
-      justify-content: space-between;
-    }
   }
 
   .hero-section__highlighted-nft {
@@ -367,7 +352,7 @@ figcaption {
   }
 }
 
-@media (width < 1070px) {
+@media (width < $media-xl) {
   .card-row__card {
     flex-basis: 50% !important;
   }
@@ -418,7 +403,7 @@ figcaption {
   }
 }
 
-@media (width < 790px) {
+@media (width < $media-m) {
   .content-container__content {
     padding: 10px;
   }
@@ -493,7 +478,7 @@ figcaption {
   }
 }
 
-@media (width < 630px) {
+@media (width < $media-xs) {
   .card-row__card {
     flex-basis: 100% !important;
   }

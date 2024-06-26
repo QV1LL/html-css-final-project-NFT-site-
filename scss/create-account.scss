@@ -1,6 +1,6 @@
 @use "./layout";
 @use "./components";
-@use "./utils/variables.scss" as variables;
+@use "./utils/variables.scss" as *;
 
 .content-container {
   display: grid;
@@ -10,7 +10,7 @@
 .content-container__content {
   display: flex;
   justify-content: space-evenly;
-  width: clamp(374px, variables.$safe-sone, 100%);
+  width: clamp(374px, $safe-sone, 100%);
 
   .content__connect-wallet-section {
     .connect-wallet-section__image {
@@ -47,7 +47,7 @@
   }
 }
 
-@media (width < 940px) {
+@media (width < $media-l) {
   .content-container__content {
     .content__connect-wallet-section {
       flex-direction: column;
