@@ -257,7 +257,20 @@ h5 {
 }
 .content-container__content {
   width: clamp(374px, 1280px, 100%);
-  flex-wrap: wrap;
+  display: grid;
+  gap: 0.8em;
+}
+.content-container__content .content__input-field {
+  border: 1px solid #3b3b3b;
+  border-radius: 1em;
+  padding: 0.5em 2em;
+}
+.content-container__content .content__input-field input {
+  border: none;
+  width: clamp(50px, 60%, 800px);
+  outline: none;
+  color: white;
+  background-color: transparent;
 }
 .content-container__content .content__cards-grid {
   display: grid;
@@ -304,28 +317,6 @@ h5 {
 .content-container__content .content__item[data-active]::after {
   background-color: #767676;
 }
-.content-container__artist-info {
-  width: clamp(374px, 1280px, 100%);
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-.content-container__artist-info .artist-info__img {
-  width: 120px;
-  height: 120px;
-  border: 2px solid #2b2b2b;
-  overflow: hidden;
-  border-radius: 2em;
-  position: relative;
-  transform: translate(0, -60px);
-}
-.content-container__artist-info .artist-info__heading {
-  display: flex;
-  justify-content: space-between;
-}
-.content-container__artist-info .additional-info {
-  width: 50%;
-}
 
 @media (width < 834px) {
   .content-container__content .content__cards-grid {
@@ -357,4 +348,4 @@ h5 {
   }
 }
 
-/*# sourceMappingURL=artist-page.css.map */
+/*# sourceMappingURL=marketplace.css.map */

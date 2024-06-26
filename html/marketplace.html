@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artist page</title>
+    <title>Marketplace</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -25,7 +25,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/artist-page.css" />
+    <link rel="stylesheet" href="../css/marketplace.css" />
   </head>
   <body>
     <header class="header d-flex justify-content-center">
@@ -62,61 +62,23 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
 
     <a href="#" id="top"></a>
 
-    <div class="background-image">
-      <img
-        class="background-image__image"
-        src="/img/artistPageImgs/Image PlaceHolder.png"
-        alt="Image PlaceHolder"
-      />
-    </div>
-
     <div class="content-container">
-      <div class="content-container__artist-info">
-        <img
-          src="/img/artistPageImgs/Avatar Placeholder.png"
-          alt="avatar"
-          class="artist-info__img"
-        />
-        <div class="artist-info__heading">
-          <h1>Animakid</h1>
-          <div class="d-flex gap-4">
-            <button class="button gap-2">
-              <img src="/img/artistPageImgs/Copy.svg" alt="copy" />
-              <figcaption>0xc0E3...B79C</figcaption>
-            </button>
-            <button class="button gap-2 transparent-button">
-              <img src="/img/artistPageImgs/Plus.svg" alt="plus" />
-              <figcaption>Follow</figcaption>
-            </button>
-          </div>
-        </div>
-        <div class="additional-info">
-          <div class="additional-info__item">
-            <h3>250k+</h3>
-            <p class="description">Volume</p>
-          </div>
-          <div class="additional-info__item">
-            <h3>50+</h3>
-            <p class="description">NFTs Sold</p>
-          </div>
-          <div class="additional-info__item">
-            <h3>3000+</h3>
-            <p class="description">Followers</p>
-          </div>
-        </div>
-        <div>
-          <h4>Bio</h4>
-          <p class="description">The internet's friendliest designer kid.</p>
-        </div>
-        <div>
-          <h4>Links</h4>
-          <div class="d-flex gap-1">
-            <img src="/img/artistPageImgs/Globe.svg" alt="globe" />
-            <img src="/img/artistPageImgs/DiscordLogo.svg" alt="discord" />
-            <img src="/img/artistPageImgs/YoutubeLogo.svg" alt="YT" />
-            <img src="/img/artistPageImgs/TwitterLogo.svg" alt="twitter" />
-            <img src="/img/artistPageImgs/InstagramLogo.svg" alt="instagram" />
-          </div>
+      <div class="content-container__content">
+        <h1 class="mt-5">Browse Marketplace</h1>
+        <p class="description">
+          Browse through more than 50k NFTs on the NFT Marketplace.
+        </p>
+        <div class="content__input-field d-flex justify-content-between">
+          <input
+            type="text"
+            name="search"
+            id=""
+            placeholder="Search your favourite NFTs"
+          />
+          <img
+            src="/img/marketplaceImgs/MagnifyingGlass.svg"
+            alt="MagnifyingGlass"
+          />
         </div>
       </div>
     </div>
@@ -124,9 +86,8 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
 
     <div class="content-container">
       <div class="content-container__content d-flex justify-content-between">
-        <h4 data-count="302" data-active="" class="content__item">Created</h4>
-        <h4 data-count="67" class="content__item">owned</h4>
-        <h4 data-count="4" class="content__item">Collection</h4>
+        <h4 data-count="302" data-active="" class="content__item">NFTs</h4>
+        <h4 data-count="67" class="content__item">Collections</h4>
       </div>
     </div>
 
