@@ -103,7 +103,7 @@
       .content__cards-grid {
         grid-template-columns: repeat(2, 1fr);
 
-        .card:nth-child(n + 7) {
+        .card:nth-child(n + 9) {
           display: none;
         }
       }
@@ -126,7 +126,7 @@
       .content__cards-grid {
         grid-template-columns: repeat(1, 1fr);
 
-        .card:nth-child(n + 4) {
+        .card:nth-child(n + 5) {
           display: none;
         }
       }

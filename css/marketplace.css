@@ -322,7 +322,7 @@ h5 {
   .content-container__content .content__cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .content-container__content .content__cards-grid .card:nth-child(n+7) {
+  .content-container__content .content__cards-grid .card:nth-child(n+9) {
     display: none;
   }
   .artist-info__heading {
@@ -337,7 +337,7 @@ h5 {
   .content-container__content .content__cards-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .content-container__content .content__cards-grid .card:nth-child(n+4) {
+  .content-container__content .content__cards-grid .card:nth-child(n+5) {
     display: none;
   }
   .content__item::after {
