@@ -1,0 +1,20 @@
+.simple-clock {
+  color: white;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #3b3b3b80;
+
+  p {
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 13.2px;
+    text-align: left;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../utils/variables" as *;
+
+.tags {
+  display: flex;
+  gap: 1em;
+
+  &__item {
+    width: fit-content;
+    padding: 0.5em 2em;
+    color: white;
+    border-radius: 2em;
+    background-color: $background-secondary;
+  }
+}
