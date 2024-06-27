@@ -1,0 +1,213 @@
+@use "./layout";
+@use "./components";
+@use "./utils/variables.scss" as *;
+
+.background-image {
+  height: 500px;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.content-container {
+  display: grid;
+  place-items: center;
+
+  &[data-background] {
+    background-color: $background-secondary;
+    margin-bottom: 0.3em;
+  }
+
+  &__content {
+    width: clamp(374px, $safe-sone, 100%);
+    flex-wrap: wrap;
+    padding: 3em;
+
+    .simple-clock {
+      padding: 2em;
+
+      .button {
+        width: 100%;
+      }
+    }
+
+    .adaptive {
+      display: none;
+    }
+
+    .content__description {
+      gap: 1em;
+      padding-top: 2em;
+      width: 50%;
+
+      p,
+      h5 {
+        padding: 0;
+        margin: 0;
+      }
+
+      .description-text {
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 35.2px;
+        text-align: left;
+      }
+    }
+
+    .content__cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2em;
+      padding: 5em 0;
+
+      .card {
+        background-color: $background;
+        width: 100% !important;
+        border-radius: 2em;
+        overflow: hidden;
+      }
+
+      .card {
+        .card-img-top {
+          height: 300px;
+        }
+      }
+
+      .description {
+        font-size: 1em;
+        color: #858584;
+      }
+
+      .text-white {
+        font-size: 1.5em;
+      }
+
+      figure {
+        figcaption {
+          color: white;
+        }
+      }
+    }
+
+    .content__item {
+      flex-grow: 1;
+      text-align: center;
+      padding: 1em;
+
+      &::after {
+        content: attr(data-count);
+        color: white;
+        padding: 0.3em 0.5em;
+        background-color: $background-secondary;
+        border-radius: 50%;
+        margin-left: 1em;
+      }
+
+      &[data-active] {
+        color: lightgray;
+        border-bottom: 4px solid #858584;
+
+        &::after {
+          background-color: mix(white, $background-secondary, 30%);
+        }
+      }
+    }
+  }
+
+  &__artist-info {
+    width: clamp(374px, $safe-sone, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .artist-info__img {
+      width: $artist-page__avatar-size;
+      height: $artist-page__avatar-size;
+      border: 2px solid $background;
+      overflow: hidden;
+      border-radius: 2em;
+      position: relative;
+      transform: translate(0, calc($artist-page__avatar-size / -2));
+    }
+
+    .artist-info__heading {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .additional-info {
+      width: 50%;
+    }
+  }
+}
+
+@media (width < $media-xm) {
+  .tags {
+    flex-direction: column;
+  }
+
+  .simple-clock {
+    display: none;
+  }
+
+  .content-container__content .adaptive {
+    display: block;
+  }
+
+  .content__heading {
+    flex-direction: column;
+
+    .button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .content-container {
+    &__content {
+      .content__cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        .card:nth-child(n + 7) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .artist-info__heading {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+@media (width < $media-xs) {
+  .artist-info__img {
+    margin: 0 auto;
+  }
+
+  .content-container {
+    &__content {
+      .content__cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        .card:nth-child(n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .content__item::after {
+    display: none;
+  }
+
+  .content-container__artist-info {
+    .additional-info {
+      width: 100%;
+    }
+  }
+}

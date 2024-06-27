@@ -252,6 +252,37 @@ h5 {
   justify-content: space-between;
 }
 
+.tags {
+  display: flex;
+  gap: 1em;
+}
+.tags__item {
+  width: fit-content;
+  padding: 0.5em 2em;
+  color: white;
+  border-radius: 2em;
+  background-color: #3b3b3b;
+}
+
+.simple-clock {
+  color: white;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(59, 59, 59, 0.5019607843);
+}
+.simple-clock p {
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 13.2px;
+  text-align: left;
+  margin: 0;
+}
+.simple-clock h4 {
+  font-size: 40px;
+}
+
 .content-container {
   display: grid;
   place-items: center;
@@ -494,6 +525,24 @@ figcaption {
 .content__nft-highlight .nft-highlight__headline button {
   padding: 1em 3em;
 }
+.content__nft-highlight .nft-highlight__simple-clock {
+  color: white;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(59, 59, 59, 0.5019607843);
+}
+.content__nft-highlight .nft-highlight__simple-clock p {
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 13.2px;
+  text-align: left;
+  margin: 0;
+}
+.content__nft-highlight .nft-highlight__simple-clock h4 {
+  font-size: 40px;
+}
 .content__nft-highlight .adaptive {
   display: none;
 }
@@ -546,7 +595,7 @@ figcaption {
   .discover-more-nfts__cards-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .discover-more-nfts__cards-grid a:nth-child(3) {
+  .discover-more-nfts__cards-grid .card:nth-child(3) {
     display: none;
   }
   .top-rated-artists__cards-grid .card:nth-child(n+7) {
@@ -618,7 +667,7 @@ figcaption {
     width: 100%;
     justify-content: center;
   }
-  .simple-clock {
+  .nft-highlight__simple-clock {
     display: none;
   }
   .how-it-works__cards {
@@ -647,7 +696,7 @@ figcaption {
   .discover-more-nfts__cards-grid {
     grid-template-columns: 1fr;
   }
-  .discover-more-nfts__cards-grid a:nth-child(3) {
+  .discover-more-nfts__cards-grid .card:nth-child(3) {
     display: block;
   }
   .discover-more-nfts__cards-grid .card .card-img-top {

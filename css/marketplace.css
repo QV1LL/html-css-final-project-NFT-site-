@@ -252,6 +252,37 @@ h5 {
   justify-content: space-between;
 }
 
+.tags {
+  display: flex;
+  gap: 1em;
+}
+.tags__item {
+  width: fit-content;
+  padding: 0.5em 2em;
+  color: white;
+  border-radius: 2em;
+  background-color: #3b3b3b;
+}
+
+.simple-clock {
+  color: white;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(59, 59, 59, 0.5019607843);
+}
+.simple-clock p {
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 13.2px;
+  text-align: left;
+  margin: 0;
+}
+.simple-clock h4 {
+  font-size: 40px;
+}
+
 .background-image__image {
   width: 100%;
 }
