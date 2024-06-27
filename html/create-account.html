@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/6298/6298730.png"
+      type="image/x-icon"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/create-account.css" />
+  </head>
+  <body>
+    <header class="header d-flex justify-content-center" id="header">
+      <div class="header__container d-flex justify-content-between">
+        <a class="header__title d-flex align-items-center" href="./index.html">
+          <figure class="d-flex align-items-center gap-3 m-0">
+            <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
+            <figcaption>NFT Marketplace</figcaption>
+          </figure>
+        </a>
+        <menu class="header__menu" id="menu">
+          <div class="menu__item">
+            <a href="./marketplace.html">Marketplace</a>
+          </div>
+          <div class="menu__item">
+            <a href="">Rankings</a>
+          </div>
+          <div class="menu__item">
+            <a href="./connect-wallet.html">Connect a wallet</a>
+          </div>
+          <a class="menu__item" href="./create-account.html">
+            <button class="button gap-2">
+              <img src="/img/headerAndFooterImgs/User.svg" alt="user" />
+              <figcaption>Sign Up</figcaption>
+            </button>
+          </a>
+        </menu>
+        <button class="burger-menu" id="bm-button"></button>
+      </div>
+    </header>
+
+    <a href="#" id="top"></a>
+
+    <div class="content-container">
+      <div class="content-container__content">
+        <div
+          class="content__connect-wallet-section d-flex justify-content-between"
+        >
+          <img
+            class="connect-wallet-section__image"
+            src="/img/createAccoundImgs/Image Placeholder.png"
+            alt="image placeholder"
+          />
+          <form class="connect-wallet-section__form">
+            <h2>Create account</h2>
+            <p class="description">
+              Welcome! enter your details and start creating, collecting and
+              selling NFTs.
+            </p>
+            <div class="input-field">
+              <img src="../img/createAccoundImgs/User.svg" alt="ico" />
+              <input
+                type="text"
+                name="username"
+                id=""
+                class="input-field__input"
+                placeholder="Username"
+              />
+            </div>
+
+            <div class="input-field">
+              <img
+                src="../img/createAccoundImgs/EnvelopeSimple.svg"
+                alt="ico"
+              />
+              <input
+                type="email"
+                name="email"
+                id=""
+                class="input-field__input"
+                placeholder="Email address"
+              />
+            </div>
+
+            <div class="input-field">
+              <img src="../img/createAccoundImgs/LockKey.svg" alt="ico" />
+              <input
+                type="password"
+                name="password"
+                id=""
+                class="input-field__input"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="input-field">
+              <img src="../img/createAccoundImgs/LockKey.svg" alt="ico" />
+              <input
+                type="password"
+                name="confirm-password"
+                id=""
+                class="input-field__input"
+                placeholder="Confirm password"
+              />
+            </div>
+            <button type="submit" class="button justify-content-center">
+              <figcaption>Create account</figcaption>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container d-flex justify-content-between">
+        <div class="container__group d-flex flex-column">
+          <figure class="d-flex align-items-center gap-3 m-0">
+            <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
+            <h5>NFT Marketplace</h5>
+          </figure>
+          <p class="description">
+            NFT marketplace UI created with Anima for Figma.
+          </p>
+          <p class="description">Join our community</p>
+          <div class="group__imgs d-flex gap-2">
+            <img
+              src="/img/headerAndFooterImgs/DiscordLogo.svg"
+              alt="discord"
+            /><img
+              src="/img/headerAndFooterImgs/YoutubeLogo.svg"
+              alt="yt"
+            /><img
+              src="/img/headerAndFooterImgs/TwitterLogo.svg"
+              alt="twitter"
+            /><img
+              src="/img/headerAndFooterImgs/InstagramLogo.svg"
+              alt="instagramm"
+            />
+          </div>
+        </div>
+        <div class="container__group d-flex flex-column">
+          <h5>Explore</h5>
+          <p class="description">
+            <a href="./marketplace.html">Marketplace</a>
+          </p>
+          <p class="description">Rankings</p>
+          <p class="description">
+            <a href="./connect-wallet.html">Connect a wallet</a>
+          </p>
+        </div>
+        <div class="container__group d-flex flex-column">
+          <h5>Join our weekly digest</h5>
+          <p class="description">
+            Get exclusive promotions & updates straight to your inbox.
+          </p>
+          <div class="input-field">
+            <input
+              class="input-field__input"
+              type="text"
+              placeholder="Enter your email here"
+            />
+            <button class="button gap-2">
+              <img src="/img/homePageImgs/EnvelopeSimple.svg" alt="rocket" />
+              <figcaption>Subscribe</figcaption>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__container">
+        <hr class="container__hr" />
+        <p class="description">Ⓒ NFT Market. Use this template freely.</p>
+      </div>
+    </footer>
+    <script src="/js/upButton.js"></script>
+    <script src="/js/burgerMenu.js"></script>
+  </body>
+</html>

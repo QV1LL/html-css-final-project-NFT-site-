@@ -1,0 +1,63 @@
+@use "./layout";
+@use "./components";
+@use "./utils/variables.scss" as *;
+
+.content-container {
+  display: grid;
+  place-items: center;
+}
+
+.content-container__content {
+  display: flex;
+  justify-content: space-evenly;
+  width: clamp(374px, $safe-sone, 100%);
+
+  .content__connect-wallet-section {
+    .connect-wallet-section__image {
+      width: clamp(300px, 100%, 950px);
+    }
+
+    .connect-wallet-section__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1em;
+      padding: 3em;
+
+      h2 {
+        font-size: 60px;
+      }
+
+      .input-field {
+        border-radius: 1.5em;
+        background-color: white;
+        padding: 0.7em 2em;
+        width: 80%;
+
+        &__input {
+          font-size: 1.2em;
+        }
+      }
+
+      .button {
+        margin-top: 1em;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (width < $media-l) {
+  .content-container__content {
+    .content__connect-wallet-section {
+      flex-direction: column;
+
+      .connect-wallet-section__form {
+        .input-field,
+        .button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

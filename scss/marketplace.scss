@@ -1,0 +1,149 @@
+@use "./layout";
+@use "./components";
+@use "./utils/variables.scss" as *;
+
+.background-image {
+  &__image {
+    width: 100%;
+  }
+}
+
+.content-container {
+  display: grid;
+  place-items: center;
+
+  &[data-background] {
+    background-color: $background-secondary;
+    margin-bottom: 0.3em;
+  }
+
+  &__content {
+    width: clamp(374px, $safe-sone, 100%);
+    display: grid;
+    gap: 0.8em;
+
+    .content__input-field {
+      border: 1px solid $background-secondary;
+      border-radius: 1em;
+      padding: 0.5em 2em;
+
+      input {
+        border: none;
+        width: clamp(50px, $input-field-width, 800px);
+        outline: none;
+        color: white;
+        background-color: transparent;
+      }
+    }
+
+    .content__cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2em;
+      padding: 5em 0;
+
+      .card {
+        background-color: $background;
+        width: 100% !important;
+        border-radius: 2em;
+        overflow: hidden;
+      }
+
+      .card {
+        .card-img-top {
+          height: 300px;
+        }
+      }
+
+      .description {
+        font-size: 1em;
+        color: #858584;
+      }
+
+      .text-white {
+        font-size: 1.5em;
+      }
+
+      figure {
+        figcaption {
+          color: white;
+        }
+      }
+    }
+
+    .content__item {
+      flex-grow: 1;
+      text-align: center;
+      padding: 1em;
+
+      &::after {
+        content: attr(data-count);
+        color: white;
+        padding: 0.3em 0.5em;
+        background-color: $background-secondary;
+        border-radius: 50%;
+        margin-left: 1em;
+      }
+
+      &[data-active] {
+        color: lightgray;
+        border-bottom: 4px solid #858584;
+
+        &::after {
+          background-color: mix(white, $background-secondary, 30%);
+        }
+      }
+    }
+  }
+}
+
+@media (width < $media-xm) {
+  .content-container {
+    &__content {
+      .content__cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        .card:nth-child(n + 9) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .artist-info__heading {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+@media (width < $media-xs) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .artist-info__img {
+    margin: 0 auto;
+  }
+
+  .content-container {
+    &__content {
+      .content__cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        .card:nth-child(n + 5) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .content__item::after {
+    display: none;
+  }
+
+  .content-container__artist-info {
+    .additional-info {
+      width: 100%;
+    }
+  }
+}
