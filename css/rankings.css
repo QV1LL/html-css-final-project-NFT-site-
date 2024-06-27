@@ -252,51 +252,88 @@ h5 {
   justify-content: space-between;
 }
 
+.background-image__image {
+  width: 100%;
+}
+
 .content-container {
   display: grid;
   place-items: center;
 }
-
 .content-container__content {
-  display: flex;
-  justify-content: space-evenly;
   width: clamp(374px, 1280px, 100%);
+  display: grid;
+  gap: 0.8em;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__image {
-  width: clamp(300px, 100%, 950px);
-}
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.content-container__content .content__cards-grid {
   gap: 1em;
-  padding: 3em;
+  padding: 2em 0;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form h2 {
-  font-size: 60px;
+.content-container__content .content__cards-grid .cards-grid__card {
+  background-color: #3b3b3b;
+  padding: 1em 2em;
+  border-radius: 1em;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form .input-field {
-  border-radius: 1.5em;
-  background-color: white;
-  padding: 0.7em 2em;
-  width: 80%;
+.content-container__content .content__cards-grid .cards-grid__card .card-description .description:nth-child(1) {
+  color: green;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form .input-field__input {
-  font-size: 1.2em;
+.content-container__content .content__cards-grid .cards-grid__card .card__img::before {
+  content: attr(data-pos);
+  border-radius: 50%;
 }
-.content-container__content .content__connect-wallet-section .connect-wallet-section__form .button {
-  margin-top: 1em;
-  width: 80%;
+.content-container__content .content__cards-grid .cards-grid__card .card-description {
+  width: 60%;
+}
+.content-container__content .content__cards-grid #example-card {
+  background-color: transparent;
+  border: 3px solid #3b3b3b;
+}
+.content-container__content .content__input-field {
+  border: 1px solid #3b3b3b;
+  border-radius: 1em;
+  padding: 0.5em 2em;
+}
+.content-container__content .content__input-field input {
+  border: none;
+  width: clamp(50px, 60%, 800px);
+  outline: none;
+  color: white;
+  background-color: transparent;
+}
+.content-container__content .text-white {
+  font-size: 1.5em;
+}
+.content-container__content figure figcaption {
+  color: white;
+}
+.content-container__content .content__item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 1em;
+}
+.content-container__content .content__item[data-active] {
+  color: lightgray;
+  border-bottom: 4px solid #858584;
 }
 
-@media (width < 940px) {
-  .content-container__content .content__connect-wallet-section {
-    flex-direction: column;
+@media (width < 834px) {
+  .content-container__content .content__cards-grid .cards-grid__card .card-description {
+    width: 40%;
   }
-  .content-container__content .content__connect-wallet-section .connect-wallet-section__form .input-field,
-  .content-container__content .content__connect-wallet-section .connect-wallet-section__form .button {
-    width: 100%;
+  .content-container__content .content__cards-grid .cards-grid__card .card-description .description:nth-child(2) {
+    display: none;
+  }
+}
+@media (width < 630px) {
+  h1 {
+    font-size: 60px;
+  }
+  .content-container__content .content__cards-grid .cards-grid__card .card-description {
+    width: fit-content;
+  }
+  .content-container__content .content__cards-grid .cards-grid__card .card-description .description:nth-child(1) {
+    display: none;
   }
 }
 
-/*# sourceMappingURL=create-account.css.map */
+/*# sourceMappingURL=rankings.css.map */
