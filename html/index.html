@@ -30,18 +30,15 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
     <link rel="stylesheet" href="../css/home-page.css" />
   </head>
   <body>
-    <header class="header d-flex justify-content-center">
+    <header class="header d-flex justify-content-center" id="header">
       <div class="header__container d-flex justify-content-between">
-        <a
-          class="header__title d-flex align-items-center"
-          href="./home-page.html"
-        >
+        <a class="header__title d-flex align-items-center" href="./index.html">
           <figure class="d-flex align-items-center gap-3 m-0">
             <img src="/img/headerAndFooterImgs/Storefront.svg" alt="shop" />
             <figcaption>NFT Marketplace</figcaption>
           </figure>
         </a>
-        <menu class="header__menu">
+        <menu class="header__menu" id="menu">
           <div class="menu__item">
             <a href="./marketplace.html">Marketplace</a>
           </div>
@@ -58,7 +55,7 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             </button>
           </a>
         </menu>
-        <button class="burger-menu"></button>
+        <button class="burger-menu" id="bm-button"></button>
       </div>
     </header>
 
@@ -885,5 +882,6 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       </div>
     </footer>
     <script src="/js/upButton.js"></script>
+    <script src="/js/burgerMenu.js"></script>
   </body>
 </html>

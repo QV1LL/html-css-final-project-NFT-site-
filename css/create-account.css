@@ -38,6 +38,7 @@
 body {
   background-color: #2b2b2b !important;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -114,11 +115,20 @@ body {
   }
 }
 @media (width < 834px) {
+  .header__menu {
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+    position: absolute;
+    flex-direction: column;
+    right: -200px;
+    height: 100vh;
+    background-color: #2b2b2b;
+    box-shadow: -0.5em 0 0.5em 0 #1b1b1b;
+    padding: 1em;
+    gap: 1em;
+  }
   .burger-menu {
     display: block;
-  }
-  .header__menu {
-    display: none;
   }
 }
 @media (width < 420px) {

@@ -3,6 +3,7 @@
 body {
   background-color: $background !important;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -82,12 +83,21 @@ body {
 }
 
 @media (width < $media-xm) {
-  .burger-menu {
-    display: block;
+  .header__menu {
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+    position: absolute;
+    flex-direction: column;
+    right: -200px;
+    height: 100vh;
+    background-color: $background;
+    box-shadow: -0.5em 0 0.5em 0 $background-dark;
+    padding: 1em;
+    gap: 1em;
   }
 
-  .header__menu {
-    display: none;
+  .burger-menu {
+    display: block;
   }
 }
 

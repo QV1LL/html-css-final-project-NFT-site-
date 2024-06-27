@@ -117,6 +117,10 @@
 }
 
 @media (width < $media-xs) {
+  h1 {
+    font-size: 60px;
+  }
+
   .artist-info__img {
     margin: 0 auto;
   }
